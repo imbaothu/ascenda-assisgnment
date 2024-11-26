@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the correct number of arguments is provided
+if [ "$#" -ne 2 ]; then
+  echo "Usage: ./runner <hotel_ids> <destination_ids>"
+  exit 1
+fi
+
+# Execute the Python script with the arguments
+python3 main.py "$1" "$2"
